@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nokomi Print — Support / Destek</title>
+<style>
+  :root { color-scheme: light dark; --ink:#1f2430; --muted:#5d574c; --paper:#fffdf8; --bg:#f7f5f0; --accent:#3d55c7; --line:#d8d2c4; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#e8e4dc; --muted:#c7c1b6; --paper:#1b2027; --bg:#121519; --accent:#b7c4ff; --line:#444b53; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif; line-height:1.7; }
+  main { max-width:820px; margin:0 auto; padding:48px 24px 80px; }
+  .brand { display:flex; align-items:center; gap:14px; margin-bottom:28px; }
+  .mark { width:54px; height:54px; border-radius:14px; background:#121519; display:grid; place-items:center; color:#fffdf8; font-weight:800; font-size:18px; }
+  .brand strong { font-size:20px; letter-spacing:-.02em; }
+  .brand span { display:block; color:var(--muted); font-size:13px; }
+  .card { background:var(--paper); border:1px solid var(--line); border-radius:20px; padding:28px 30px; margin:20px 0; }
+  h1 { font-size:clamp(28px,5vw,42px); line-height:1.1; letter-spacing:-.03em; margin:0 0 10px; }
+  h2 { font-size:20px; margin:30px 0 8px; color:var(--accent); }
+  p, li { color:var(--muted); font-size:15px; }
+  a { color:var(--accent); }
+  .meta { color:var(--muted); font-size:13px; margin-bottom:20px; }
+  nav { display:flex; gap:8px; flex-wrap:wrap; margin:24px 0 8px; }
+  nav a { text-decoration:none; border:1px solid var(--line); background:var(--paper); padding:7px 12px; border-radius:999px; font-size:13px; font-weight:700; }
+  ul { padding-left:20px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand"><div class="mark">NP</div><div><strong>Nokomi Print</strong><span>Print from Phone App</span></div></div>
+  <nav><a href="#english">English</a><a href="#turkce">Türkçe</a><a href="privacy-policy.html">Privacy / Gizlilik</a></nav>
+  <section id="english" class="card">
+    <h1>Support</h1>
+    <div class="meta">Nokomi Print 1.0.0 · Android 8.0+ · Developer: Osman ALOĞLU</div>
+    <p>Need help with printing, a file format or a connection problem? Email <a href="mailto:osmanaloglu@gmail.com">osmanaloglu@gmail.com</a> with your phone model, Android version, printer model and a short description. Please do not send sensitive documents.</p>
+    <h2>Printer not found</h2>
+    <ul>
+      <li>Keep the phone and printer on the same Wi-Fi network (2.4 GHz is the safest for many printers).</li>
+      <li>Guest networks and access-point isolation can block discovery. Disable isolation or use the main network.</li>
+      <li>Open Network Doctor in the app and run the connection check.</li>
+      <li>Allow local-network access when Android asks. On Android 13+, allow nearby devices for Bluetooth.</li>
+      <li>As a fallback, enter the printer IP address and IPP path manually.</li>
+    </ul>
+    <h2>Print is cut off or too small</h2>
+    <ul>
+      <li>Choose Fit to page or Quick scale in the preview.</li>
+      <li>Select the correct paper size (A4, A5, A6 or Letter) and orientation.</li>
+      <li>For exact Office layout, export the original document to PDF and print the PDF.</li>
+      <li>Studio documents can use Fit to one page before Preview.</li>
+    </ul>
+    <h2>Bluetooth</h2>
+    <p>Bluetooth Classic/SPP support is a text test for paired receipt printers. Pair the printer in Android Settings first, then allow nearby-device access. Wi-Fi/IPP printers use the printer list instead.</p>
+    <h2>Privacy</h2>
+    <p>Files are processed locally and sent only to the printer you choose. See the <a href="privacy-policy.html">Privacy Policy</a> for details and deletion instructions.</p>
+  </section>
+
+  <section id="turkce" class="card">
+    <h1>Destek</h1>
+    <div class="meta">Nokomi Print 1.0.0 · Android 8.0+ · Geliştirici: Osman ALOĞLU</div>
+    <p>Yazdırma, dosya biçimi veya bağlantı sorununda <a href="mailto:osmanaloglu@gmail.com">osmanaloglu@gmail.com</a> adresine telefon modeliniz, Android sürümünüz, yazıcı modeliniz ve kısa bir açıklamayla yazın. Lütfen hassas belgeler göndermeyin.</p>
+    <h2>Yazıcı bulunamıyor</h2>
+    <ul>
+      <li>Telefon ve yazıcı aynı Wi-Fi ağında olsun (birçok yazıcı için 2.4 GHz daha güvenlidir).</li>
+      <li>Misafir ağları ve AP izolasyonu keşfi engelleyebilir.</li>
+      <li>Uygulamada Ağ Doktoru’nu açıp bağlantı kontrolünü çalıştırın.</li>
+      <li>Android izin isterse yerel ağ erişimine izin verin. Android 13+ için Bluetooth yakındaki cihaz iznini açın.</li>
+      <li>Gerekirse yazıcı IP adresini ve IPP yolunu elle girin.</li>
+    </ul>
+    <h2>Baskı kesik veya küçük</h2>
+    <ul>
+      <li>Önizlemede Sayfaya sığdır veya Hızlı ölçek seçin.</li>
+      <li>Doğru kağıt boyutunu (A4, A5, A6, Letter) ve yönü seçin.</li>
+      <li>Birebir Office düzeni için belgeyi PDF’e aktarıp PDF’i yazdırın.</li>
+      <li>Studio belgelerinde Önizle’den önce Tek sayfaya sığdır’ı kullanın.</li>
+    </ul>
+    <h2>Bluetooth</h2>
+    <p>Bluetooth Classic/SPP desteği, eşleştirilmiş fiş yazıcıları için metin testidir. Önce Android Ayarlar’dan yazıcıyı eşleştirin ve yakındaki cihaz iznini verin. Wi-Fi/IPP yazıcılar yazıcı listesini kullanır.</p>
+    <h2>Gizlilik</h2>
+    <p>Dosyalar cihazda işlenir ve yalnızca seçtiğiniz yazıcıya gönderilir. Ayrıntılar ve silme adımları için <a href="privacy-policy.html">Gizlilik Politikası</a>’na bakın.</p>
+  </section>
+  <footer style="color:var(--muted);font-size:13px;margin-top:36px">© 2026 Nokomi Print · <a href="privacy-policy.html">Privacy / Gizlilik</a></footer>
+</main>
+</body>
+</html>
