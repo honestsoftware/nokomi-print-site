@@ -36,7 +36,7 @@
   <nav><a href="#english">English</a><a href="#turkce">Türkçe</a><a href="support.html">Support / Destek</a></nav>
   <section id="english" class="card">
     <h1>Privacy Policy</h1>
-    <div class="meta">Effective: 21 November 2026 · App: Nokomi Print · Package: com.remoteprint.app</div>
+    <div class="meta">Effective: 24 November 2026 · App: Nokomi Print · iOS 17+ · Bundle: com.nokomiprint.app</div>
     <p class="notice">Short version: Nokomi Print has no accounts, ads or analytics. Documents are prepared on your phone and sent only to the printer you choose on your local network. The app does not upload your documents to a Nokomi cloud.</p>
 
     <h2>1. Who is responsible?</h2>
@@ -49,22 +49,22 @@
     <p>To discover printers, the app uses local-network discovery (mDNS/Bonjour and IPP). The app can store the selected printer’s host, port, IPP path and capabilities locally. Print jobs travel directly from your phone to that printer over your local network. Depending on the printer, IPP traffic may be <strong>unencrypted</strong>; use a trusted network.</p>
     <h3>Web pages</h3>
     <p>The built-in browser loads addresses you enter directly from the internet. Those websites receive normal web requests (such as your IP address and user agent) and apply their own privacy policies. Nokomi Print does not add an account or tracking profile to that browsing.</p>
-    <h3>Bluetooth printers</h3>
-    <p>If you use the Bluetooth Classic test, Android grants access to paired Bluetooth devices. The test text is sent directly to the printer you select. We do not receive it.</p>
+    <h3>Device permissions</h3>
+    <p>On iPhone and iPad, files are received only through the system document picker, the photo picker or the “Open in” action you choose. The app requests Local Network access so it can find AirPrint/IPP printers with Bonjour and connect to the printer you select. It does not request Bluetooth Classic, USB or camera access, and it does not read your photo library without your selection.</p>
     <h3>Update and maintenance check</h3>
-    <p>The app may contact <strong>versionNokomi.php</strong> on the project’s hosting domain to read version, maintenance and update settings. A normal HTTP request can include your IP address, app version and standard request headers in the hosting provider’s security logs. The app does not send your documents, account details or advertising identifiers. If the server is unreachable, the app continues to work with safe defaults.</p>
+    <p>The app may contact a static <strong>version.json</strong> file on the project’s GitHub Pages hosting to read version, maintenance and update settings. A normal HTTPS request can include your IP address, app version and standard request headers in the hosting provider’s security logs. The app does not send your documents, account details or advertising identifiers. If the server is unreachable, the app continues to work with safe defaults.</p>
     <h3>No advertising, analytics or accounts</h3>
     <p>There are no advertising SDKs, third-party analytics, crash-reporting SDKs, user accounts or in-app purchases in this version.</p>
 
     <h2>3. Permissions</h2>
-    <p><span class="pill">Internet</span><span class="pill">Network state</span><span class="pill">Wi-Fi / multicast discovery</span><span class="pill">Bluetooth</span><span class="pill">Local network</span></p>
-    <p>File access is provided through Android’s system file picker and share sheet. Nokomi Print only receives the item you choose. You can revoke Bluetooth, local-network or file access at any time in Android Settings.</p>
+    <p><span class="pill">Internet</span><span class="pill">Local Network</span><span class="pill">Bonjour / mDNS</span><span class="pill">Documents</span><span class="pill">Photos</span></p>
+    <p>File access is provided through the iOS document picker, the photo picker and the share/“Open in” flow. Nokomi Print only receives the item you choose. You can revoke Local Network access at any time in iOS Settings → Privacy &amp; Security → Local Network.</p>
 
     <h2>4. Sharing and sale</h2>
     <p>We do not sell personal data. Data is disclosed only to the recipients needed for the feature you request: the printer you choose, websites you open, and the hosting provider used for the optional version check. We do not share documents with advertisers or data brokers.</p>
 
     <h2>5. Retention and deletion</h2>
-    <p>Recent-document references, printer settings and Studio drafts remain on your device until you clear them in the app or clear the app’s storage/uninstall it. Temporary print files are kept only as long as needed for preview and printing and may be removed by Android. We do not hold an account or document archive that can be deleted on a server. For server-log questions, contact us at the address above.</p>
+    <p>Recent-document references, printer settings and Studio drafts remain on your device until you clear them in the app or delete the app. Temporary print files are kept only as long as needed for preview and printing and may be removed by iOS. We do not hold an account or document archive that can be deleted on a server. For server-log questions, contact us at the address above.</p>
 
     <h2>6. Children</h2>
     <p>Nokomi Print is a general productivity tool and is not directed to children under 13. It does not create profiles or provide social features.</p>
@@ -81,7 +81,7 @@
 
   <section id="turkce" class="card">
     <h1>Gizlilik Politikası</h1>
-    <div class="meta">Yürürlük: 21 Kasım 2026 · Uygulama: Nokomi Print · Paket: com.remoteprint.app</div>
+    <div class="meta">Yürürlük: 24 Kasım 2026 · Uygulama: Nokomi Print · iOS 17+ · Paket: com.nokomiprint.app</div>
     <p class="notice">Kısa özet: Nokomi Print’te hesap, reklam veya analiz yoktur. Belgeler telefonunuzda hazırlanır ve yalnızca yerel ağda seçtiğiniz yazıcıya gönderilir. Belgeleriniz bir Nokomi bulutuna yüklenmez.</p>
     <h2>1. Sorumlu</h2>
     <p>Nokomi Print, <strong>Osman ALOĞLU</strong> tarafından geliştirilir ve yayımlanır. Gizlilik soruları ve silme talepleri için <a href="mailto:osmanaloglu@gmail.com">osmanaloglu@gmail.com</a> adresine yazın.</p>
@@ -92,20 +92,20 @@
     <p>Yazıcıları bulmak için yerel ağ keşfi (mDNS/Bonjour ve IPP) kullanılır. Seçilen yazıcının adresi, bağlantı noktası, IPP yolu ve yetenekleri cihazda saklanabilir. Baskı işleri telefonunuzdan doğrudan yerel ağdaki yazıcıya gider. Yazıcıya bağlı olarak IPP trafiği <strong>şifresiz</strong> olabilir; güvendiğiniz bir ağ kullanın.</p>
     <h3>Web sayfaları</h3>
     <p>Dahili tarayıcı, girdiğiniz adresleri doğrudan internetten yükler. Bu siteler normal web isteklerini (IP adresi ve tarayıcı bilgisi gibi) alır ve kendi gizlilik politikalarını uygular. Nokomi Print bu gezinmeye hesap veya takip profili eklemez.</p>
-    <h3>Bluetooth yazıcıları</h3>
-    <p>Bluetooth Classic testini kullanırsanız Android eşleştirilmiş Bluetooth cihazlarına erişim verir. Test metni doğrudan seçtiğiniz yazıcıya gönderilir; tarafımıza ulaşmaz.</p>
+    <h3>Cihaz izinleri</h3>
+    <p>iPhone ve iPad’de dosyalar yalnızca sistem dosya seçicisi, fotoğraf seçicisi veya sizin başlattığınız “Birlikte aç” işlemiyle alınır. Uygulama; AirPrint/IPP yazıcılarını Bonjour ile bulmak ve seçtiğiniz yazıcıya bağlanmak için Yerel Ağ erişimi ister. Bluetooth Classic, USB veya kamera izni istemez; seçim yapmadan fotoğraf arşivinizi okumaz.</p>
 
     <h3>Sürüm ve bakım denetimi</h3>
-    <p>Uygulama; sürüm, bakım ve güncelleme ayarlarını okumak için proje alan adındaki <strong>versionNokomi.php</strong> adresine bağlanabilir. Normal bir HTTP isteği, barındırma sağlayıcısının güvenlik günlüklerinde IP adresi, uygulama sürümü ve standart istek başlıklarıyla yer alabilir. Belgeleriniz, hesap bilgileriniz veya reklam kimlikleri gönderilmez. Sunucuya ulaşılamazsa uygulama güvenli varsayılanlarla çalışmaya devam eder.</p>
+    <p>Uygulama; sürüm, bakım ve güncelleme ayarlarını okumak için projenin GitHub Pages barındırmasındaki statik <strong>version.json</strong> dosyasına bağlanabilir. Normal bir HTTPS isteği, barındırma sağlayıcısının güvenlik günlüklerinde IP adresi, uygulama sürümü ve standart istek başlıklarıyla yer alabilir. Belgeleriniz, hesap bilgileriniz veya reklam kimlikleri gönderilmez. Sunucuya ulaşılamazsa uygulama güvenli varsayılanlarla çalışmaya devam eder.</p>
     <h3>Reklam, analiz ve hesap yok</h3>
     <p>Bu sürümde reklam SDK’sı, üçüncü taraf analiz, çökme raporlama SDK’sı, kullanıcı hesabı veya uygulama içi satın alma yoktur.</p>
     <h2>3. İzinler</h2>
-    <p><span class="pill">İnternet</span><span class="pill">Ağ durumu</span><span class="pill">Wi-Fi / çoklu yayın keşfi</span><span class="pill">Bluetooth</span><span class="pill">Yerel ağ</span></p>
-    <p>Dosya erişimi Android’in sistem dosya seçicisi ve paylaşım menüsü üzerinden sağlanır. Nokomi Print yalnızca seçtiğiniz öğeyi alır. Bluetooth, yerel ağ ve dosya izinlerini Android Ayarlar’dan istediğiniz zaman kaldırabilirsiniz.</p>
+    <p><span class="pill">İnternet</span><span class="pill">Yerel Ağ</span><span class="pill">Bonjour / mDNS</span><span class="pill">Belgeler</span><span class="pill">Fotoğraflar</span></p>
+    <p>Dosya erişimi iOS dosya seçicisi, fotoğraf seçicisi ve paylaşım/“Birlikte aç” akışı üzerinden sağlanır. Nokomi Print yalnızca seçtiğiniz öğeyi alır. Yerel Ağ erişimini iOS Ayarlar → Gizlilik ve Güvenlik → Yerel Ağ bölümünden istediğiniz zaman kaldırabilirsiniz.</p>
     <h2>4. Paylaşım ve satış</h2>
     <p>Kişisel veriler satılmaz. Veriler yalnızca istediğiniz özellik için gerekli alıcılara açıklanır: seçtiğiniz yazıcı, açtığınız web sitesi ve isteğe bağlı sürüm denetimi için barındırma sağlayıcısı. Belgeler reklamcılarla veya veri simsarlarıyla paylaşılmaz.</p>
     <h2>5. Saklama ve silme</h2>
-    <p>Son belge bağlantıları, yazıcı ayarları ve Studio taslakları; uygulamada temizleyene veya uygulama verilerini silene kadar cihazınızda kalır. Geçici baskı dosyaları yalnızca önizleme ve baskı için gerektiği sürece tutulur ve Android tarafından kaldırılabilir. Sunucuda silinecek bir hesap veya belge arşivi tutmuyoruz. Sunucu günlükleriyle ilgili sorular için yukarıdaki adrese yazın.</p>
+    <p>Son belge bağlantıları, yazıcı ayarları ve Studio taslakları; uygulamada temizleyene veya uygulamayı silene kadar cihazınızda kalır. Geçici baskı dosyaları yalnızca önizleme ve baskı için gerektiği sürece tutulur ve iOS tarafından kaldırılabilir. Sunucuda silinecek bir hesap veya belge arşivi tutmuyoruz. Sunucu günlükleriyle ilgili sorular için yukarıdaki adrese yazın.</p>
     <h2>6. Çocuklar</h2>
     <p>Nokomi Print genel bir üretkenlik aracıdır ve 13 yaş altındaki çocuklara yönelik değildir. Profil oluşturmaz veya sosyal özellik sunmaz.</p>
     <h2>7. Güvenlik</h2>
